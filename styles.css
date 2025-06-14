@@ -1,0 +1,99 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #e8e3ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.calculator {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(170, 130, 255, 0.3);
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.display-box {
+  background: #ece6f8;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: right;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2em;
+  overflow-x: auto;
+  color: #4a148c;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.display {
+  margin: 0;
+  word-break: break-word;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  flex: 1;
+  height: 60px;
+  margin: 5px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: #e7e0e0;
+  color: #6b4e6e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.equal-to-sign {
+  background-color: #8c44aa;
+  color: white;
+  width: calc(50% - 10px);
+}
+
+.equal-to-sign:hover {
+  background-color: #6a1b9a;
+}
+
+/* Responsiveness */
+@media (max-width: 400px) {
+  .calculator {
+    padding: 20px;
+  }
+
+  button {
+    height: 55px;
+    margin: 4px;
+    font-size: 1.1em;
+  }
+
+  .display-box {
+    font-size: 1.8em;
+  }
+}
